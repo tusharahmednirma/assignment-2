@@ -151,11 +151,6 @@ ul li {
     background-color: #4EC5F7;
 }
 
-main,
-section {
-    max-width: 1140px;
-    margin: 70px auto;
-}
 
 .game-image {
     height: 300px;
@@ -210,7 +205,9 @@ section {
     justify-content: center;
     align-items: center;
     gap: 50px;
-   
+    max-width: 1140px;
+    margin: 30px auto;
+
 }
 
 .play-title {
@@ -233,17 +230,48 @@ section {
     font-weight: 400;
     font-size: 1rem;
     line-height: 30px;
-    text-align: right; 
+    text-align: right;
 }
-.sub-img{
+
+.sub-img {
     width: 200px;
     height: 250px;
-   
+
 }
-.instant-sub-img{
+
+.instant-sub-img {
     margin: 0px;
     position: relative;
     bottom: 150px;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    
+}
+button{
+    border: none;
+    border-radius: 50px;
+    background: #FFF;
+}
+
+.feature-img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature-text {
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.button-container{
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
 
@@ -278,7 +306,8 @@ section {
         margin: auto;
     }
 
-    .play-instant-container,.game-img-container {
+    .play-instant-container,
+    .game-img-container {
         flex-direction: column;
     }
 
@@ -290,20 +319,24 @@ section {
         width: 100%;
         text-align: center;
     }
-    .play-img{
+
+    .play-img {
         width: 60%;
         height: 90%;
         margin-right: 30px;
     }
-    .sub-img{
+
+    .sub-img {
         width: 40%;
         margin-left: 40px;
         margin-top: 30px;
         height: 60%;
     }
-     .play-title, .game-text{
+
+    .play-title,
+    .game-text {
         text-align: center;
-     }
+    }
 }
 
 
@@ -327,6 +360,7 @@ section {
         flex-direction: column-reverse;
     }
 
+    .play-instant-container,
     .game-img-container {
         flex-direction: column;
     }
@@ -337,6 +371,11 @@ section {
 
     .single-game {
         width: 100%;
+        text-align: center;
+    }
+
+    .play-title,
+    .game-text {
         text-align: center;
     }
 }
