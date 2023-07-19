@@ -16,7 +16,7 @@ header {
     gap: 10px;
 }
 .l-img{
-    width: 100%;
+    width: 50px;
     height: auto;
 }
 .first-word{
@@ -24,7 +24,6 @@ header {
 }
 .logo-heading{
     font-size: 2rem;
-    width: 50%;
     font-weight: 700;
 }
 
@@ -61,4 +60,43 @@ ul a {
 .gray {
     background-color: rgba(11, 2, 35, 0.10);
     padding: 10px 10px;
+}
+
+
+
+
+
+
+
+
+/* media query styles */
+/* for mobile device */
+@media screen and (max-width:576px) {
+     nav{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 80px;
+        
+        
+    }
+    .icons ul ,li{
+       flex-direction: column;
+       margin-top: 30px;
+    }
+}
+
+
+/* for tablet */
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 80px;
+        
+        
+    }
+    .icons ul ,li{
+       flex-direction: column;
+       margin-top: 30px;
+    } 
 }
