@@ -7,7 +7,7 @@
 /* nav-section */
 nav {
     max-width: 1040px;
-    margin: 30px auto;
+    margin: 20px auto;
 }
 
 .logo-container {
@@ -35,11 +35,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .icons ul {
     display: flex;
     list-style: none;
+    align-items: center;
+    justify-content: center;
 }
 
 ul a {
@@ -49,6 +52,9 @@ ul a {
     text-align: center;
     font-size: 1.1rem;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-icon-1 {
@@ -64,37 +70,50 @@ ul a {
 .gray {
     background-color: rgba(11, 2, 35, 0.10);
     padding: 10px 10px;
+    border-radius: 10px;
 }
 
 /* banner-section */
-.banner-container {
-    display: flex;
-    justify-content: space-around;
-    height: 70vh;
-    align-items: center;
-    background-image: url('./images/Group\ 14.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-
-}
 
 .banner-image {
     width: 450px;
     height: 450px;
-    margin-right: 100px;
+
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+    max-width: 1240px;
+    gap: 100px;
+}
+
+.banner-container div {
+    flex: 1;
+}
+
+.banner-text {
+    background-image: url('./images/Group\ 14.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
 }
 
 .banner-title {
     color: #0B0223;
-    text-align: center;
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
+    margin-top: 50px;
+
 
 }
 
 .banner-head {
-    text-align: center;
     font-size: 4rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -111,15 +130,10 @@ ul li {
     color: #534C64;
     font-weight: 500;
     text-transform: lowercase;
-    padding-left: 20px;
     margin-bottom: 20px;
     font-size: 0.9rem;
 }
 
-.banner-text {
-    height: 300px;
-    margin-top: 50px;
-}
 
 .banner-button {
     border-radius: 48px;
@@ -130,16 +144,59 @@ ul li {
     color: white;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .btn {
     background-color: #4EC5F7;
 }
-.button-section{
-    margin-left: 40px;
+
+main {
+    max-width: 1140px;
+    margin: 70px auto;
+}
+
+.game-image {
+    height: 300px;
+    width: 250px;
+}
+
+.game-img-container {
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
+
+.game-description {
+    color: #534C64;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.game-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.game-span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game-text {
+    color: #534C64;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+
+}
+
 
 
 
@@ -162,6 +219,15 @@ ul li {
         flex-direction: column;
         margin-top: 30px;
     }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-image {
+        width: 80%;
+        margin: auto;
+    }
 }
 
 
@@ -179,5 +245,9 @@ ul li {
     li {
         flex-direction: column;
         margin-top: 30px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
     }
 }
