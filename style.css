@@ -189,12 +189,12 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
-.game-text {
+.game-description {
     color: #534C64;
-    text-align: center;
     font-weight: 400;
     margin-bottom: 30px;
     font-size: 0.9rem;
+    text-align: center;
 
 }
 
@@ -209,13 +209,9 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
    
 }
-
-/* .play-instant-text {
-    text-align: right;
-} */
 
 .play-title {
     font-size: 2rem;
@@ -235,7 +231,7 @@ section {
 .game-text {
     color: #534C64;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 30px;
     text-align: right; 
 }
@@ -282,7 +278,7 @@ section {
         margin: auto;
     }
 
-    .game-img-container {
+    .play-instant-container,.game-img-container {
         flex-direction: column;
     }
 
@@ -294,6 +290,20 @@ section {
         width: 100%;
         text-align: center;
     }
+    .play-img{
+        width: 60%;
+        height: 90%;
+        margin-right: 30px;
+    }
+    .sub-img{
+        width: 40%;
+        margin-left: 40px;
+        margin-top: 30px;
+        height: 60%;
+    }
+     .play-title, .game-text{
+        text-align: center;
+     }
 }
 
 
