@@ -151,7 +151,8 @@ ul li {
     background-color: #4EC5F7;
 }
 
-main {
+main,
+section {
     max-width: 1140px;
     margin: 70px auto;
 }
@@ -195,6 +196,58 @@ main {
     margin-bottom: 30px;
     font-size: 0.9rem;
 
+}
+
+.play-img {
+    width: 450px;
+    height: 450px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.play-instant-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+   
+}
+
+/* .play-instant-text {
+    text-align: right;
+} */
+
+.play-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0B0223;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.play-span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game-text {
+    color: #534C64;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 30px;
+    text-align: right; 
+}
+.sub-img{
+    width: 200px;
+    height: 250px;
+   
+}
+.instant-sub-img{
+    margin: 0px;
+    position: relative;
+    bottom: 150px;
 }
 
 
