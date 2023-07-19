@@ -228,6 +228,19 @@ main {
         width: 80%;
         margin: auto;
     }
+
+    .game-img-container {
+        flex-direction: column;
+    }
+
+    .game-header {
+        padding: 10px;
+    }
+
+    .single-game {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
@@ -249,5 +262,18 @@ main {
 
     .banner-container {
         flex-direction: column-reverse;
+    }
+
+    .game-img-container {
+        flex-direction: column;
+    }
+
+    .game-header {
+        padding: 10px;
+    }
+
+    .single-game {
+        width: 100%;
+        text-align: center;
     }
 }
