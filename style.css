@@ -403,13 +403,17 @@ footer {
     font-weight: 600;
 }  
 
-.single-game:hover::before {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.7); 
-}
+.single-game:hover::before { 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 80%; 
+    border-radius: 10px; 
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid rgb(234, 51, 112);   
+} 
 
 .single-game:hover .watch {
     display: block;
@@ -506,14 +510,19 @@ footer {
         font-weight: 600;
     }  
     
-    .single-game:hover::before {
-        position: absolute;
-        margin-left: 80px;
-        width: 61%;
-        height: 80%;
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.7);
-        
+    .single-game:hover::before { 
+        content: ""; 
+        position: absolute; 
+        margin-left: 83px; 
+        margin-right: 0px; 
+        top: 0; 
+        left: 0; 
+        width: 60%; 
+        height: 79%; 
+        border-radius: 10px; 
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 3px solid rgb(234, 51, 112); 
+         
     }
     
     .single-game:hover .watch {
@@ -661,4 +670,5 @@ footer {
     .game-text {
         text-align: center;
     }
+   
 }
